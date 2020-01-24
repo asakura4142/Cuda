@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700&display=swap');
 body{
     font-family: "Titillium Web";
+    color: #ffffff;
 }
-                                                /* header  */
+                                                            /* HEADER */
 header{
    background-color: #87509c;
 }
@@ -35,7 +36,7 @@ header{
 } 
 .header_nav a{
     text-decoration: none;
-    color: #ffff;
+    color:inherit;
 }
 .header_nav ul li.active{
     background-color: #643a79;
@@ -59,86 +60,96 @@ header{
     margin-bottom: 50px;
 }
 .button_line button{
-height: 65px;
-background-color: #eb7d4b;
-color: #ffffff;
-font-size: 18px;
-font-weight: 600;
-line-height: 65px;
-letter-spacing: 0.027em;
-border: none;
-border-bottom: 4px solid#c86a40;
-overflow: hidden;
-border-radius: 3px;
-padding-left: 80px;
-padding-right: 80px;
-transition: background-color 300ms ease-in-out;
+    height: 65px;
+    background-color: #eb7d4b;
+    color: inherit;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 65px;
+    letter-spacing: 0.027em;
+    border: none;
+    border-bottom: 4px solid#c86a40;
+    overflow: hidden;
+    border-radius: 3px;
+    padding-left: 80px;
+    padding-right: 80px;
+    transition: background-color 300ms ease-in-out;
 
 }
 .button_line button:hover{
     background-color: #c86a40;
     transition: background-color 300ms ease-in-out;
-
 }
-
+                                                            /* SERVICES */
 .services {
     background-color: #17c2a4;
-}
-.services-text {
+    padding: 120px 0;
     text-align: center;
-    padding-top:119px;
-    color: #ffffff;
 }
-.services-text h2{
+
+.services h2{
     font-size: 40px;
     font-weight: 700;
     line-height: 30px;
-    letter-spacing: 0.4em;
-    margin-bottom: 21px;
+    letter-spacing: 0.1em;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    position: relative;
 }
-hr{
-    width: 87px;
+.services h2::after{
+    content: "";
+    display: block;
+    width: 86px;
     height: 4px;
-    background-color: #000000;
-    opacity: 0.15;
-    }
-.services-text p{
+    background-color:rgba(0, 0, 0, 0.15);
+    position: absolute;
+    left: 50%;
+    margin-left: -43px;
+    bottom: 0;
+  } 
+.description{
     font-size: 18px;
     font-weight: 400;
     line-height: 26px;
-    letter-spacing: 0.036em;
-    margin-top: 23px;
-}
+    letter-spacing: 0.02em;
+    margin-bottom: 70px;
+} 
 
-.services_list {
+ .services_list {
     display: flex;
     justify-content: space-between;
-    color: #ffffff;
-    padding-bottom: 128px;
-    flex-wrap: nowrap;
-    margin-top: 78px;
 }
-.service_item{
-    max-width: 260px;
-    text-align: center;
+ .service_item{
+   width: calc(25% - 15px);
+   box-sizing: border-box;
+} 
+.img{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 50px;
 }
-.service_item:hover{
+/* .service_item:hover{
     border: 2px solid #14a58b;
+    border-radius: 5px;
     box-sizing: border-box;
-}
-.service_item h3{
+    padding: 15px;
+    transition: all 300ms ease-in-out;
+} */
+.item_title{
     font-size: 24px;
     font-weight: 700;
     line-height: 18px;
     text-transform: uppercase;
-    letter-spacing: 0.048em;
-    margin-top: 62px;
-    margin-bottom: 27px;
-}
-
-.service_item p{
+    letter-spacing: 0.02em;
+    margin-bottom: 27px; 
+} 
+.item_description{
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
-    letter-spacing: 0.032em;
-}
+    letter-spacing: 0.02em;
+    padding: 0 30px;
+    box-sizing: border-box;
+} 
