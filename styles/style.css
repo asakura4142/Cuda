@@ -59,7 +59,7 @@ header{
     line-height: 48px;
     margin-bottom: 50px;
 }
-.button_line button{
+.button{
     height: 65px;
     background-color: #eb7d4b;
     color: inherit;
@@ -74,20 +74,20 @@ header{
     padding-left: 80px;
     padding-right: 80px;
     transition: background-color 300ms ease-in-out;
-
 }
-.button_line button:hover{
+.button_line .button:hover{
     background-color: #c86a40;
     transition: background-color 300ms ease-in-out;
 }
                                                             /* SERVICES */
-.services {
-    background-color: #17c2a4;
+section{
     padding: 120px 0;
     text-align: center;
+}                                                            
+.services {
+    background-color: #17c2a4;
 }
-
-.services h2{
+h2{
     font-size: 40px;
     font-weight: 700;
     line-height: 30px;
@@ -96,7 +96,7 @@ header{
     padding-bottom: 25px;
     position: relative;
 }
-.services h2::after{
+h2::after{
     content: "";
     display: block;
     width: 86px;
@@ -153,3 +153,65 @@ header{
     padding: 0 30px;
     box-sizing: border-box;
 } 
+                                                                /* CONTACT */
+.contact{
+    background-color: #3c5499;
+}                                                              
+.contact_form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 856px;
+    margin: 0 auto;
+}
+.contact_form input[type="text"],.contact_form input[type="email"]{
+    width: calc(50% - 16px);
+    margin-bottom: 25px;
+    height: 56px;
+    border-radius: 5px;
+    background-color: #273a71;  
+    border: none;
+    color: inherit;
+    padding-left: 25px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.contact_form input::placeholder,
+.contact_form textarea::placeholder{
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "Titillium Web"
+
+/* Text style for "*" */
+/* color: #ff4444;
+font-family: "Arial MT";
+/* font-size: 16px; */
+/* /* }  */
+}
+ textarea{
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 50px; 
+    background-color: #273a71; 
+    height: 200px;
+    border: none;
+    color: inherit;
+    border-radius: 5px;
+    resize: none;
+    padding-top:24px;
+    box-sizing: border-box;
+    padding-left: 25px;
+    font-weight: 400;
+    line-height: 18px;
+} 
+.contact_form .button{
+    margin: 0 auto;
+    background-color: #30bae7;
+    border-bottom: 4px solid#299ec4;
+}
+.contact_form .button:hover{
+    background-color: #299ec4;
+    transition: background-color 300ms ease-in-out;
+}
