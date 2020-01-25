@@ -176,13 +176,13 @@ h2::after{
     box-sizing: border-box;
     font-size: 18px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 18px; 
+    font-family: "Titillium Web"
 }
 .contact_form input::placeholder,
 .contact_form textarea::placeholder{
     font-size: 18px;
     color: #ffffff;
-    font-family: "Titillium Web"
 
 /* Text style for "*" */
 /* color: #ff4444;
@@ -191,7 +191,6 @@ font-family: "Arial MT";
 /* /* }  */
 }
  textarea{
-    font-size: 18px;
     width: 100%;
     margin-bottom: 50px; 
     background-color: #273a71; 
@@ -203,8 +202,10 @@ font-family: "Arial MT";
     padding-top:24px;
     box-sizing: border-box;
     padding-left: 25px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 18px; 
+    font-family: "Titillium Web"
 } 
 .contact_form .button{
     margin: 0 auto;
