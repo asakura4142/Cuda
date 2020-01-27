@@ -216,3 +216,24 @@ font-family: "Arial MT";
     background-color: #299ec4;
     transition: background-color 300ms ease-in-out;
 }
+                                                                        /* FOOTER */
+footer{
+background-color: #344b8e;
+
+}
+footer ul{
+    min-height: 110px;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing:0.02em;
+}
+footer ul a{
+    text-decoration: none;
+    color:inherit;
+}
+footer ul a:hover{
+    color: #30bae7;
+}
