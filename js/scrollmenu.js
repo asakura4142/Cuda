@@ -422,6 +422,7 @@
                 menuPaddingEnd = parseInt(scrollMenuWrapper.css(vertical ? 'padding-bottom' : 'padding-right'), 10) || 0;
 
             var handleSize = (scrollMenuSize - menuPaddingStart - menuPaddingEnd - options.scrollAnchorSpacing * (self.scrollHandles.length - 1)) * containerHeight / self.scrollHeight;
+            
 
 
             //set handle size

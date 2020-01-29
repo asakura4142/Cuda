@@ -37,6 +37,7 @@
   left: 0;
   overflow: hidden;
   background: #ccc;
+  border-radius: 3px;
 }
 .scroll-menu-dragging * {
   cursor: -webkit-grabbing !important;
@@ -49,7 +50,8 @@
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: grab;
-  opacity: .7;
+  opacity: 0.5;
+  border-radius: 3px;
 }
 /*** scroll menu content ***/
 .scroll-menu-content {
@@ -59,10 +61,12 @@
   -o-transition: all ease 300ms;
   transition: all ease 300ms;
   overflow: hidden;
+  box-shadow: -2px 0px 11px 4px rgba(0,0,0,0.59);
+  border-radius: 5px 1px 1px 5px;
 }
 /*** for vertical scroll menu ***/
 .scroll-menu-wrapper.vertical {
-  top: 50%;
+  top: 52%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -o-transform: translateY(-50%);
@@ -85,7 +89,15 @@
 }
 .scroll-menu-wrapper.vertical .scroll-menu-content.hovered {
   width: 200px;
-}
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: .1em;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);           
+} 
 /*** for horizontal scrollmenu ***/
 .scroll-menu-wrapper.horizontal {
   left: 50%;

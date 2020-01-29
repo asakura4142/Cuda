@@ -3,23 +3,20 @@ var setupOption = {
     anchorSetup: [
         {
             backgroundColor: "#dc767d",
-            label: "Section 1"
+            label: "About"
             },
         {
             backgroundColor: "#36d278",
-            label: "Section 2"
+            label: "Services"
             },
         {
             backgroundColor: "#22cfc6",
-            label: "Section 3"
+            label: "Contact"
             },
         {
-            backgroundColor: "#8794a1",
-            label: "Section 4"
+            backgroundColor: "red",
+            label: "Social icon"
             },
-        {
-            backgroundColor: "#1ccdaa",
-            label: "Section 5"
-        }]
+    ]
 };
 var scrollMenu = ScrollMenu(setupOption);
