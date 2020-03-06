@@ -108,12 +108,12 @@ h2::after{
     background-color:rgba(0, 0, 0, 0.15);
     position: absolute;
     left: 50%;
-    transform: translateX(-43px);
+    transform: translateX(-50%);
     bottom: 0;
     transition: all 500ms ease-in-out;
 }
 h2:hover::after{
-    transform: scaleX(6.5);
+    transform: scaleX(6);
     transition: all 500ms ease-in-out;
 }
 
@@ -236,3 +236,49 @@ footer ul a{
 footer ul a:hover{
     color: #30bae7;
 }
+                                                                                        /* Responsive */
+@media (max-width: 1200px){
+    
+}
+@media (max-width: 992px){
+    .scroller-container {
+        overflow: auto;
+      }
+    .scroll-menu-wrapper {
+        display: none;
+      }
+    .services_list {
+        flex-wrap: wrap;
+    }  
+    .service_item {
+        width: calc(50% - 15px);
+        margin-top: 15px;
+    }
+    footer{
+        padding: 15px 0;
+    }
+    footer ul{
+        flex-wrap: wrap;
+    }
+    footer ul li{
+        width: calc(25% - 15px);
+
+    }
+}
+@media (max-width: 768px){
+    .button_line {
+        padding: 15px;
+        padding-bottom: 40px;
+    }
+    section{
+        padding: 60px 0;
+    }
+    .description {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 576px){
+   
+}
+                                                                                        
+                                                                                        
