@@ -7,6 +7,7 @@ body{
                                                             /* HEADER */
 header{
    background-color: #87509c;
+   padding-top:50px;
 }
 header section,
 footer section {
@@ -26,7 +27,7 @@ footer section {
     justify-content: space-between;
 }
 .top_line{
-    margin-top:50px;
+    /* margin-top:20px; */
 }
 .header::before{
     content: '';
@@ -37,11 +38,6 @@ footer section {
     height: 100%;
     background-color: #5e5373;
     z-index: 2;
-}
-.container {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 0 10px;
 }
 .header_body {
     position: relative;
@@ -105,9 +101,9 @@ footer section {
 } 
 .button_line{
     text-align: center;
-    padding: 180px 85px 140px 85px;
+    padding: 120px 85px 140px 85px;
 }
-.button_line p{
+.button_line h1{
     color: #f7f3ea; 
     font-size: 42px;
     font-weight: 700;
@@ -417,7 +413,7 @@ footer ul a:hover{
     .button_line {
         padding-top: 60px;
     }  
-    .button_line p{
+    .button_line h1{
         font-size: 24px;
         line-height: 1.5;
         margin-bottom: 20px;

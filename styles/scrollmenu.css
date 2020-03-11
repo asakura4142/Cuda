@@ -24,6 +24,7 @@
 }
 .scroll-menu-wrapper {
   position: absolute;
+  z-index: 5;
 }
 .scroll-anchor {
   cursor: pointer;
