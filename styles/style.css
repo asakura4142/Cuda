@@ -26,9 +26,6 @@ footer section {
     align-items: center;
     justify-content: space-between;
 }
-.top_line{
-    /* margin-top:20px; */
-}
 .header::before{
     content: '';
     position: absolute;
@@ -159,11 +156,6 @@ h2::after{
     bottom: 0;
     transition: all 500ms ease-in-out;
 }
-h2:hover::after{
-    transform: scaleX(6);
-    transition: all 500ms ease-in-out;
-}
-
 .description{
     font-size: 18px;
     font-weight: 400;
